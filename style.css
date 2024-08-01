@@ -1,0 +1,6 @@
+body {
+  background-image: url('img/kuromi.jpg'); /* Ganti 'kuromi.jpg' dengan nama gambar Anda */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
