@@ -15,6 +15,16 @@
 <body class="bg-gradient-to-r from-indigo-500 to-sky-500 font-sans antialiased"
     style="background-image: url('img/kuromi.jpg');">
 
+    <!-- Loader -->
+    <div id="loader"
+        class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 fixed inset-0 flex items-center justify-center z-50">
+        <div class="text-center flex flex-col items-center">
+            <img src="img/logo.png" alt="Loading" class="loader-gif fade-in mb-4">
+            <p class="loader-text fade-in italic">Kak Piyak ╰(*°▽°*)╯</p>
+        </div>
+    </div>
+
+
     <header class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white shadow-lg">
         <div class="container mx-auto py-6 flex justify-between items-center">
             <!-- Logo and Title -->
@@ -103,7 +113,9 @@
                     <span class="text-4xl text-sky-500 font-bold mb-4">25</span>
                     <div class="text-gray-700">
                         <h3 class="text-xl font-semibold mb-2 font-serif">July 2024</h3>
-                        <p>I sent you my WhatsApp number, and you reached out to me on WhatsApp. Later, you shared a photo from your university. I was almost there, but plans changed. Felt a mix of excitement and disappointment!</p>
+                        <p>I sent you my WhatsApp number, and you reached out to me on WhatsApp. Later, you shared a
+                            photo from your university. I was almost there, but plans changed. Felt a mix of excitement
+                            and disappointment!</p>
                     </div>
                 </div>
                 <div class="timeline-item bg-white rounded-lg shadow-md p-6 flex flex-col items-center">
@@ -384,6 +396,21 @@
         }
     </script>
 
+
+    <script>
+        // Simulate page load
+        window.addEventListener('load', () => {
+            const loader = document.getElementById('loader');
+            const content = document.getElementById('content');
+
+            // Hide loader and show content after page load
+            setTimeout(() => {
+                loader.style.display = 'none';
+                content.classList.remove('opacity-0');
+                content.classList.add('opacity-100');
+            }, 1000); // Adjust timing as needed
+        });
+    </script>
 </body>
 
 </html>

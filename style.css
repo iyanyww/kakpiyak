@@ -5,7 +5,23 @@ body {
   background-attachment: fixed;
 }
 
-
+ /* Customize this to match your header/footer colors */
+ 
+.loader-text {
+  font-size: 1.5rem;
+  color: #fff; /* Adjust text color as needed */
+}
+.loader-gif {
+  width: 100px; /* Adjust size as needed */
+}
+/* Fade in and out animation */
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
 
 .nav-hidden {
   display: none;
