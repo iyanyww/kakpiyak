@@ -5,6 +5,8 @@ body {
   background-attachment: fixed;
 }
 
+
+
 .nav-hidden {
   display: none;
 }
@@ -39,21 +41,60 @@ video {
   object-fit: cover;
 }
 
-@keyframes fade-in {
-  0% {
-      opacity: 0;
-      transform: translateY(20px);
+    /* Keyframes for fade-in animation */
+    @keyframes fade-in {
+      from {
+          opacity: 0;
+      }
+      to {
+          opacity: 1;
+      }
   }
-  100% {
-      opacity: 1;
-      transform: translateY(0);
+
+  /* Apply fade-in animation to elements */
+  .animate-fade-in {
+      animation: fade-in 1.5s ease-out;
   }
-}
 
-.animate-fade-in {
-  animation: fade-in 2s ease-in-out;
-}
+  /* Ensure the video covers the full screen */
+  .h-screen {
+      height: 100vh;
+  }
 
-.drop-shadow-lg {
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
-}
+  /* Text shadow for better readability */
+  .drop-shadow-lg {
+      text-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  }
+
+   /* Ensure navigation buttons are visible */
+   .swiper-button-next,
+   .swiper-button-prev {
+       color: white;
+       width: 40px;
+       height: 40px;
+       background-color: rgba(0, 0, 0, 0.5);
+       border-radius: 50%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+
+   .swiper-button-next::after,
+   .swiper-button-prev::after {
+       font-size: 24px;
+   }
+
+   .swiper-button-next {
+       right: 10px;
+       z-index: 10;
+   }
+
+   .swiper-button-prev {
+       left: 10px;
+       z-index: 10;
+   }
+
+   /* Ensure the Swiper container takes full width */
+   .swiper-container {
+       width: 100%;
+   }
