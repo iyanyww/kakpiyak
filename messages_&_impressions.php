@@ -9,11 +9,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@300;600&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="bg-gradient-to-r from-indigo-500 to-sky-500 font-sans antialiased"
     style="background-image: url('img/kuromi.jpg');">
+
+     <!-- Loader -->
+     <div id="loader"
+     class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 fixed inset-0 flex items-center justify-center z-50">
+     <div class="text-center flex flex-col items-center">
+         <img src="img/logo.png" alt="Loading" class="loader-gif fade-in mb-4">
+         <p class="loader-text fade-in italic">Kak Piyak ╰(*°▽°*)╯</p>
+     </div>
+ </div>
 
     <header class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white shadow-lg">
         <div class="container mx-auto py-8 flex items-center">
@@ -208,19 +217,8 @@
         </div>
     </footer>
 
-    <script>
-        document.getElementById('menu-toggle').addEventListener('click', function () {
-            var menu = document.getElementById('mobile-menu');
-            menu.classList.toggle('hidden');
-
-            var bars = document.querySelectorAll('.hamburger span');
-            bars[0].classList.toggle('rotate-45');
-            bars[0].classList.toggle('translate-y-2');
-            bars[1].classList.toggle('opacity-0');
-            bars[2].classList.toggle('-rotate-45');
-            bars[2].classList.toggle('-translate-y-2');
-        });
-    </script>
+    <script src="js/mobile.js"></script>
+    <script src="js/loader.js"></script>
 
 </body>
 
