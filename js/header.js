@@ -1,4 +1,13 @@
- // Memasukkan header
- fetch('component/header.html')
- .then(response => response.text())
- .then(data => document.getElementById('header').innerHTML = data);
+class HeaderComponent extends HTMLElement {
+    connectedCallback() {
+      this.innerHTML = `
+
+        
+
+     <script src="mobile.js"></script>
+
+     `;
+  }
+}
+
+customElements.define('header-component', HeaderComponent);

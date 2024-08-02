@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kak Piyak - About</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="bg-gradient-to-r from-indigo-500 to-sky-500 font-sans antialiased" style="background-image: url('img/kuromi.jpg');">
@@ -20,72 +21,82 @@
      </div>
  </div>
 
-    <header class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white shadow-lg">
-        <div class="container mx-auto py-8 flex items-center">
-            <!-- Logo and Title -->
-            <div class="flex items-center flex-shrink-0">
-                <img src="img/logo.png" alt="Logo" class="h-12 mr-4">
-                <h1 class="text-3xl font-bold font-serif">Kak Piyak</h1>
-            </div>
-    
-            <!-- Navbar Menu -->
-            <nav class="flex-1 flex justify-center">
-                <ul id="menu" class="hidden md:flex space-x-10 items-center">
-                    <li><a href="index.html" class="hover:text-yellow-200 font-sans">Home</a></li>
-                    <li><a href="about.html" class="hover:text-yellow-200 font-sans">About</a></li>
-                    <li><a href="messages_&_impressions.html" class="hover:text-yellow-200 font-sans">Messages & Impressions</a></li>
-                </ul>
-            </nav>
-    
-            <!-- Mobile Menu Button -->
-            <button id="menu-toggle" class="block md:hidden focus:outline-none">
-                <div class="hamburger space-y-2">
-                    <span class="block w-8 h-0.5 bg-white"></span>
-                    <span class="block w-8 h-0.5 bg-white"></span>
-                    <span class="block w-8 h-0.5 bg-white"></span>
-                </div>
-            </button>
+ <header class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white shadow-lg">
+    <div class="container mx-auto py-6 flex justify-between items-center">
+        <!-- Logo and Title -->
+        <div class="flex items-center flex-shrink-0">
+            <img src="img/logo.png" alt="Logo" class="h-12 mr-4">
+            <h1 class="text-3xl font-bold font-serif">Kak Piyak</h1>
         </div>
-    
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white">
-            <div class="flex justify-center py-4">
-                <ul class="flex flex-col items-center space-y-4">
-                    <li><a href="index.html" class="hover:text-yellow-200 font-sans">Home</a></li>
-                    <li><a href="about.html" class="hover:text-yellow-200 font-sans">About</a></li>
-                    <li><a href="messages_&_impressions.html" class="hover:text-yellow-200 font-sans">Messages & Impressions</a></li>
-                </ul>
+
+        <!-- Navbar Menu -->
+        <nav class="hidden md:flex flex-1 justify-center items-center">
+            <ul id="menu" class="flex space-x-8 items-center">
+                <li><a href="index.html"
+                        class="hover:text-yellow-200 transition-colors duration-200 font-sans"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="about.html"
+                        class="hover:text-yellow-200 transition-colors duration-200 font-sans"><i class="fa-solid fa-person"></i> About</a></li>
+                <li><a href="messages_&_impressions.html"
+                        class="hover:text-yellow-200 transition-colors duration-200 font-sans"><i class="fa-solid fa-message"></i> Messages &
+                        Impressions</a></li>
+            </ul>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <button id="menu-toggle" class="block md:hidden focus:outline-none">
+            <div class="hamburger space-y-1.5">
+                <span class="block w-8 h-0.5 bg-white"></span>
+                <span class="block w-8 h-0.5 bg-white"></span>
+                <span class="block w-8 h-0.5 bg-white"></span>
             </div>
-        </div>
-    </header>
+        </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu"
+        class="hidden md:hidden bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white">
+        <ul class="flex flex-col items-center space-y-4 py-4">
+            <li><a href="index.html" class="hover:text-yellow-200 transition-colors duration-200 font-sans"><i class="fa-solid fa-house"></i> Home</a>
+            </li>
+            <li><a href="about.html"
+                    class="hover:text-yellow-200 transition-colors duration-200 font-sans"><i class="fa-solid fa-person"></i> About</a></li>
+            <li><a href="messages_&_impressions.html"
+                    class="hover:text-yellow-200 transition-colors duration-200 font-sans"><i class="fa-solid fa-message"></i> Messages &
+                    Impressions</a></li>
+        </ul>
+    </div>
+</header>
 
     <!-- Main Content -->
-    <main class="container mx-auto p-6">
-        <div class="flex flex-col items-center md:flex-row">
-            <!-- Gambar Kak Piyak -->
-            <div class="w-full md:w-1/3 mb-6 md:mb-0">
-                <img src="img/logo.png" alt="Gambar Kak Piyak" class="w-full h-auto rounded-lg shadow-lg">
-            </div>
-
-            <!-- Penjelasan About Kak Piyak -->
-            <div class="w-full md:w-2/3 md:pl-6 border border-gray-300 bg-white p-6 rounded-lg shadow-md">
-                <h1 class="text-3xl font-bold mb-4">About Kak Piyak</h1>
-                <p class="text-lg mb-4">
-                    Kak Piyak and I met for the first time on July 23, 2024, at New Beverly Hills in Jababeka, Cikarang Utara. Despite my initial nervousness, meeting Kak Piyak quickly eased my worries. 
-                    Our journey together began with a virtual connection on Discord, where I discovered Kak Piyak's multiple accounts and began to understand their world better.
-                </p>
-                <p class="text-lg mb-4">
-                    On July 25, 2024, Kak Piyak reached out via WhatsApp, sharing a glimpse of their university life. We almost had the chance to meet near their campus, strengthening our bond. Our first shared experience playing MLBB on July 29, 2024, was a memorable one, as we had a great time together. During this time, I asked Kak Piyak how much they cared for me, and their response of '7' reflected the depth of our budding connection, considering we've known each other for only a few weeks.
-                </p>
-                <p class="text-lg mb-4">
-                    Kak Piyak has also shared their personal struggles, including their trauma and fear of men. Through our conversations and interactions, I've strived to offer comfort and support, helping Kak Piyak feel more at ease and trusting.
-                </p>
-                <p class="text-lg">
-                    Our journey together is just beginning, and I'm excited to see where it leads. Kak Piyak is an inspiring figure whose presence has brought significant positivity into my life. I am grateful for our connection and look forward to many more shared experiences.
-                </p>
+<main class="container mx-auto p-6">
+    <div class="flex flex-col items-center md:flex-row md:space-x-6 space-y-6 md:space-y-0">
+        <!-- Gambar Kak Piyak -->
+        <div class="w-full md:w-1/3 mb-6 md:mb-0">
+            <div class="relative">
+                <img src="img/logo.png" alt="Gambar Kak Piyak" class="w-full h-auto rounded-lg shadow-lg transition-transform duration-500 hover:scale-105">
+                <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-black opacity-50 rounded-lg"></div>
             </div>
         </div>
-    </main>
+
+        <!-- Penjelasan About Kak Piyak -->
+        <div class="w-full md:w-2/3 p-6 bg-white border border-gray-300 rounded-lg shadow-md">
+            <h1 class="text-4xl font-extrabold mb-4 text-gray-900">About Kak Piyak</h1>
+            <p class="text-lg leading-relaxed mb-4 text-gray-700">
+                Kak Piyak and I met for the first time on July 23, 2024, at New Beverly Hills in Jababeka, Cikarang Utara. Despite my initial nervousness, meeting Kak Piyak quickly eased my worries. Our journey together began with a virtual connection on Discord, where I discovered Kak Piyak's multiple accounts and began to understand their world better.
+            </p>
+            <p class="text-lg leading-relaxed mb-4 text-gray-700">
+                On July 25, 2024, Kak Piyak reached out via WhatsApp, sharing a glimpse of their university life. We almost had the chance to meet near their campus, strengthening our bond. Our first shared experience playing MLBB on July 29, 2024, was a memorable one, as we had a great time together. During this time, I asked Kak Piyak how much they cared for me, and their response of '7' reflected the depth of our budding connection, considering we've known each other for only a few weeks.
+            </p>
+            <p class="text-lg leading-relaxed mb-4 text-gray-700">
+                Kak Piyak has also shared their personal struggles, including their trauma and fear of men. Through our conversations and interactions, I've strived to offer comfort and support, helping Kak Piyak feel more at ease and trusting.
+            </p>
+            <p class="text-lg leading-relaxed text-gray-700">
+                Our journey together is just beginning, and I'm excited to see where it leads. Kak Piyak is an inspiring figure whose presence has brought significant positivity into my life. I am grateful for our connection and look forward to many more shared experiences.
+            </p>
+        </div>
+    </div>
+</main>
+
 
 
     <footer class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white shadow-lg py-12">
