@@ -122,3 +122,11 @@ video {
     -ms-user-select: none; /* Internet Explorer/Edge */
 }
 
+/* Mencegah klik kanan pada gambar */
+.no-download {
+  -webkit-user-drag: none;
+  user-drag: none;
+  pointer-events: none;
+}
+
+
