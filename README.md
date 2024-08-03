@@ -1,7 +1,3 @@
-# Berikut adalah contoh deskripsi README untuk repositori GitHub yang berisi file-file web untuk situs "Kak Piyak":
-
----
-
 # Kak Piyak Website
 
 Welcome to the "Kak Piyak" website repository. This project showcases a beautifully designed and thoughtfully crafted website dedicated to Kak Piyak. The website includes multiple sections, such as Home, About, and Messages & Impressions, each highlighting various aspects of Kak Piyak's journey and impact.
