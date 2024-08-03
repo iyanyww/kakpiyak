@@ -32,7 +32,7 @@ To view the website locally:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/kakpiyak.git
+   git clone https://github.com/iyanyww/kakpiyak.git
    ```
 2. Navigate to the project directory:
    ```bash
