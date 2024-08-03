@@ -53,5 +53,3 @@ This project is licensed under the [MIT License](LICENSE).
 Special thanks to Kak Piyak for the inspiration behind this project. This website is a tribute to the positive impact Kak Piyak has had on those around them.
 
 ---
-
-Feel free to customize the README further to suit your specific needs and to add any additional information about the project or your personal notes.
